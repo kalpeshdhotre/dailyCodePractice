@@ -2,13 +2,14 @@ import { useState } from "preact/hooks";
 import preactLogo from "./assets/preact.svg";
 import viteLogo from "/vite.svg";
 import "./app.css";
+import Counter from "./component/CounterCard";
 
 export function App() {
-   const [count, setCount] = useState(0);
+   //  const [count, setCount] = useState(0);
 
    return (
       <>
-         <h1>Counter is: {count} </h1>
+         {/* <h1>Counter is: {count} </h1>
          <button
             onClick={() => {
                if (count < 5) {
@@ -24,7 +25,10 @@ export function App() {
             }}
          >
             Deduct from Count
-         </button>
+         </button> */}
+
+         <Counter />
+         <Counter />
       </>
    );
 }
