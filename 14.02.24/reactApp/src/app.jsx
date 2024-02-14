@@ -1,34 +1,29 @@
-import { useState } from "preact/hooks";
+import React, { useState } from "react";
+
 import preactLogo from "./assets/preact.svg";
 import viteLogo from "/vite.svg";
 import "./app.css";
 import Counter from "./component/CounterCard";
+import AddName from "./component/AddName";
+import DisplayNames from "./component/DisplayNames";
 
 export function App() {
    //  const [count, setCount] = useState(0);
+   const [names, setNames] = useState([]);
+
+   //  const addName = (newName) => {
+   //     setNames([...names, newName]);
+   //  };
+
+   function addName(newName) {
+      setNames([...names, newName]);
+   }
 
    return (
       <>
-         {/* <h1>Counter is: {count} </h1>
-         <button
-            onClick={() => {
-               if (count < 5) {
-                  setCount(count + 1);
-               }
-            }}
-         >
-            Add to Count
-         </button>
-         <button
-            onClick={() => {
-               if (count != -5) setCount(count - 1);
-            }}
-         >
-            Deduct from Count
-         </button> */}
-
-         <Counter />
-         <Counter />
+         {/* <AddName onAddName /> */}
+         <AddName onAddName={addName} />
+         <DisplayNames names={names} />
       </>
    );
 }
