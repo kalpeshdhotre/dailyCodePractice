@@ -1,4 +1,4 @@
-const names = ["kalpesh", "kalpita", "Kshiprra"];
+const names = ["Kalpesh", "Kalpita", "Kshiprra"];
 const newName = ["Kavita", "Prathamesh"];
 
 const finalArray = [...names, ...newName];

@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
 
-function DisplayNames({ names }) {
-   const [displayNames, setDisplayNames] = useState(names);
+function DisplayNames({ namestodisplay }) {
+   const [displayNames, setDisplayNames] = useState([]);
    // setDisplayNames(names);
 
    useEffect(() => {
-      setDisplayNames(names);
-   }, [names]);
+      setDisplayNames(namestodisplay);
+   }, [namestodisplay]);
 
    const clearDisplay = () => {
       setDisplayNames([]);
    };
 
    const refershDisplay = () => {
-      setDisplayNames(names);
+      setDisplayNames(namestodisplay);
    };
+   console.log(namestodisplay);
 
    return (
       <div>

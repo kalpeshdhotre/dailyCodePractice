@@ -1,26 +1,27 @@
-import { useState } from "preact/hooks";
-import React from "react";
+import React, { useState } from "react";
 
-function AddName({ onAddName }) {
-   const [name, setName] = useState("");
+function AddName({ names, setNames }) {
+   const [fName, setfName] = useState(names);
 
    const handleChange = (e) => {
-      setName(e.target.value);
+      setfName(e.target.value);
    };
 
    const handleSubmit = (e) => {
       //   e.preventDefault();asd
       //   if (name.trim() === "") return;
-      setName(e.target.value);
-      onAddName(name);
-      setName("");
+      // setName(e.target.value);
+      setNames([...names, fName]);
+      setfName("");
+      // console.log(fName);
+      // console.log(names);
    };
    return (
       <div>
          <h1>Enter Details Below</h1>
-         <form action="">
-            <input onChange={handleChange} type="text" title="Enter Name" />
-         </form>
+
+         <input onChange={handleChange} type="text" title="Enter Name" />
+
          <button onClick={handleSubmit}>SAVE</button>
       </div>
    );
