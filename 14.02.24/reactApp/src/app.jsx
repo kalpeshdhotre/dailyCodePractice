@@ -6,6 +6,7 @@ import DisplayNames from "./component/DisplayNames";
 
 export function App() {
    const [names, setNames] = useState([]);
+   // setNames([1, 2, 3, 4, 5]);
 
    //  const addName = (newName) => {
    //     setNames([...names, newName]);

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 
 function DisplayNames({ namestodisplay }) {
-   const [displayNames, setDisplayNames] = useState([]);
-   // setDisplayNames(names);
+   const [displayNames, setDisplayNames] = useState(namestodisplay);
+   console.log("array is", displayNames);
+
+   // setDisplayNames(namestodisplay);
 
    useEffect(() => {
       setDisplayNames(namestodisplay);
@@ -15,7 +17,7 @@ function DisplayNames({ namestodisplay }) {
    const refershDisplay = () => {
       setDisplayNames(namestodisplay);
    };
-   console.log(namestodisplay);
+   // console.log(displayNames);
 
    return (
       <div>
