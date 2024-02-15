@@ -16,7 +16,25 @@ export function App() {
       <>
          {/* <AddName onAddName /> */}
          <AddName names={names} setNames={setNames} />
+
          <DisplayNames namestodisplay={names} />
       </>
+   );
+}
+
+export function Card({ children }) {
+   return (
+      <div
+         style={{
+            border: "1px solid grey",
+            padding: "5px",
+            width: "200px",
+            textAlign: "center",
+            margin: "15px",
+            backgroundColor: "grey",
+         }}
+      >
+         {children}
+      </div>
    );
 }
