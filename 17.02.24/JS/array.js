@@ -5,8 +5,8 @@ const sentenseLength = 8;
 const dbArray = [];
 let sentense = "";
 
-for (i = 1; i <= dbLength; i++) {
-   for (j = 1; j <= sentenseLength; j++) {
+for (let i = 1; i <= dbLength; i++) {
+   for (let j = 1; j <= sentenseLength; j++) {
       sentense = sentense + words[Math.floor(sentenseLength * Math.random())];
       sentense = sentense + " ";
    }
