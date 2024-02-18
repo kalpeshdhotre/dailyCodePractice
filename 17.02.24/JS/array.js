@@ -1,17 +1,17 @@
 const words = ["Hi", "there", "Singapore", "Hello", "trekking", "coding", "no", "challenge"];
 
-const dbLength = 100;
-const sentenseLength = 8;
-const dbArray = [];
+const dbSize = 100;
+const sentLength = 8;
+const dbArr = [];
 let sentense = "";
 
-for (let i = 1; i <= dbLength; i++) {
-   for (let j = 1; j <= sentenseLength; j++) {
-      sentense = sentense + words[Math.floor(sentenseLength * Math.random())];
+for (let i = 1; i <= dbSize; i++) {
+   for (let j = 1; j <= sentLength; j++) {
+      sentense = sentense + words[Math.floor(sentLength * Math.random())];
       sentense = sentense + " ";
    }
-   dbArray.push(sentense);
+   dbArr.push(sentense);
    sentense = "";
 }
 
-console.log(dbArray);
+console.log(dbArr);
