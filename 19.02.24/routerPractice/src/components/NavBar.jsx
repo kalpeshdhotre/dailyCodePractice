@@ -1,5 +1,12 @@
-export default function NavBar() {}
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-return()
-
-TextDecoderStream()
+export default function NavBar() {
+   const navigate = useNavigate();
+   return (
+      <div>
+         <button onClick={() => navigate("/")}>HomePage</button>
+         <button onClick={() => navigate("/Dashboard")}>Dashboard</button>
+      </div>
+   );
+}
