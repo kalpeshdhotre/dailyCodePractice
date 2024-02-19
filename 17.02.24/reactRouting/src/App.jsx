@@ -21,6 +21,7 @@ function App() {
 
 function Appbar() {
    const navigate = useNavigate();
+   // component routing
    return (
       <div>
          <button
