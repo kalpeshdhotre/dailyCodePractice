@@ -45,7 +45,7 @@ function EvenCountRenderer() {
 function Buttons() {
    // const [count, setCount] = useRecoilState(countAtom);
    const setCount = useSetRecoilState(countAtom);
-   console.log("Buttons not rendering");
+   console.log("Buttons  rendering");
 
    return (
       <div>
