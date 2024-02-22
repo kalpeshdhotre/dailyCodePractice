@@ -8,8 +8,8 @@ export default function UserInput() {
    const wordsArray = ["Hello", "Good", "Morning", "evening", "Night", "year", "Happy"];
    let paraLength: number = 0;
 
-   function getLength(e) {
-      paraLength = e.target.value;
+   function getLength(e: React.ChangeEvent<HTMLInputElement>) {
+      paraLength = parseInt(e.target.value);
    }
 
    function generatePara() {
