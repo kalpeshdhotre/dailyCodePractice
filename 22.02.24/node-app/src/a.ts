@@ -11,7 +11,7 @@
 // greet("kalpesh");
 
 //===================================
-// TYPE INFERENCE
+// ! TYPE INFERENCE
 //===================================
 
 // function sum(a: number, b: number): number {
@@ -45,7 +45,7 @@
 // });
 
 //===================================
-// TSConfig file - rootdir & outdir setting in tsconfig.json
+//! TSConfig file - rootdir & outdir setting in tsconfig.json
 //===================================
 
 //===================================
@@ -59,7 +59,7 @@
 //===================================
 
 //===================================
-// Interfaces
+//! Interfaces
 // types to object : mentioing same in functions at diffrent types will be repatative job which violet DRY rule, therefore we declare type of object once as folows syntax as below
 // interface User{
 //     firstName: string
@@ -89,3 +89,11 @@ function isLegal(user: User) {
 // Types are same as interface only "=" in syntax/
 // we cannot derive class from types
 // additional features of types are UNIONS / INTERSECTION
+// ? enum - is enumerated human readble values like up,down,left,right
+// enum Direction  {
+//    up,
+//    down,
+//    left,
+//    right
+// }
+// ! Generics

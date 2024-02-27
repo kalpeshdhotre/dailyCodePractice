@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 // let x: number = 1;
 // x = "kalpesh";
 // console.log(x);
